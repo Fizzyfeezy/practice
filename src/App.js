@@ -1,0 +1,52 @@
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Greet from './components/Greet';
+import Counter from './components/counter';
+import FunctionClick from './components/FunctionClick';
+import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css';
+import Form from './components/Form';
+
+
+function App() {
+  return (
+    <div className="App">
+      {/* <h1 className = 'error'>Error</h1>
+      <h1 className = {styles.success}>Success</h1> */}
+      <Form />
+      {/* <Inline /> */}
+      {/* <Stylesheet primary = {true}/> */}
+      {/* <FunctionClick /> */}
+      {/* <EventBind /> */}
+      {/* <ParentComponent /> */}
+      {/* <UserGreeting /> */}
+      {/* <NameList /> */}
+      {/* <Counter /> */}
+      {/* <Greet /> */}
+      {/* <Greet name = 'Clark' heroName = 'Phrase'>Take note of Every Child</Greet> */}
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header> */}
+    </div>
+  );
+}
+
+export default App;
