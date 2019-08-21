@@ -32,6 +32,21 @@ export class AppNinjas extends Component {
         })
         console.log(id)
     }
+    componentDidMount(){
+        console.log('ComponentDidMount')
+    }
+    shouldComponentUpdate(){
+        console.log('LifeStyleA shouldComponentUpdate')
+        return true
+    }
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('LifeCycleA getSnapshotBeforeUpdate')
+        console.log(prevProps, prevState)
+        return null
+    }
+    componentDidUpdate(){
+        console.log('ComponentDiDUpdate')
+    }
 
     render() {
         return (
