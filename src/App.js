@@ -14,6 +14,8 @@ import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from './components/Form';
 import AppNinjas from './components/AppNinjas';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 
 function App() {
@@ -21,7 +23,9 @@ function App() {
     <div className="App">
       {/* <h1 className = 'error'>Error</h1>
       <h1 className = {styles.success}>Success</h1> */}
-      <AppNinjas />
+      {/* <AppNinjas /> */}
+      {/* <ParentComp /> */}
+      <RefsDemo />
       {/* <Form /> */}
       {/* <Inline /> */}
       {/* <Stylesheet primary = {true}/> */}
