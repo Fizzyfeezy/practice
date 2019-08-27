@@ -16,6 +16,11 @@ import Form from './components/Form';
 import AppNinjas from './components/AppNinjas';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 
 function App() {
@@ -23,9 +28,15 @@ function App() {
     <div className="App">
       {/* <h1 className = 'error'>Error</h1>
       <h1 className = {styles.success}>Success</h1> */}
+      <ErrorBoundary>
+        <Hero heroName = 'Davis'/>
+      </ErrorBoundary>
       {/* <AppNinjas /> */}
       {/* <ParentComp /> */}
-      <RefsDemo />
+      {/* <FRParentInput /> */}
+      {/* <PortalDemo /> */}
+      {/* <FocusInput /> */}
+      {/* <RefsDemo /> */}
       {/* <Form /> */}
       {/* <Inline /> */}
       {/* <Stylesheet primary = {true}/> */}
