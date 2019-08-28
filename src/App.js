@@ -23,6 +23,11 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import CounterTwo from './components/CounterTwo';
+import HoverCountertwo from './components/HoverCountertwo';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/UserContext';
 
 
 function App() {
@@ -30,8 +35,16 @@ function App() {
     <div className="App">
       {/* <h1 className = 'error'>Error</h1>
       <h1 className = {styles.success}>Success</h1> */}
-      <ClickCounter />
-      <HoverCounter />
+      <UserProvider value = "Fizzyfeezy">
+          <ComponentC/>
+      </UserProvider>
+      
+      {/* <CounterTwo render = {(count, IncrementCount) => <ClickCounterTwo count = {count} 
+      IncrementCount = {IncrementCount}/>}/>
+      <CounterTwo render = {(count, IncrementCount) => <HoverCountertwo count = {count} 
+      IncrementCount = {IncrementCount}/>}/> */}
+      {/* <ClickCounter name = "Hello"/>
+      <HoverCounter name = "Hello"/> */}
       {/* <ErrorBoundary>
         <Hero heroName = 'Davis'/>
       </ErrorBoundary> */}
